@@ -10,8 +10,18 @@ import { PagesComponent } from './pages.component';
 //-------importar modulo de shared
 import { SharedModule } from '../shared/shared.module';
 
+//----importar modulo de components----//
+import { ProgresoModule } from '../components/components.module';
+
 //------importar el router--------//
 import { AppRoutingModule } from '../app-routing.module';
+
+
+import { FormsModule } from '@angular/forms';
+
+// Importa Ng2ChartsModule
+import { ChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +33,10 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ProgresoModule,
+    
   ],
 
   exports:[

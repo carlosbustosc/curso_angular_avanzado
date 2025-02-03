@@ -15,11 +15,13 @@ import { PagesModule } from './pages/pages.module';
 //----importar modulo de resgistros---//
 import { RegistrosModule } from './registros/registros.module';
 
+
 @NgModule({
   declarations: [
 
     AppComponent,
-    Nopage404Component,
+    Nopage404Component
+
    
   /*
     DashboradComponent,

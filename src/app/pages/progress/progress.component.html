@@ -1,1 +1,69 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                mi progreso
+                <h4 class="card-title">Striped Progress bar <a class="get-code" data-toggle="collapse" href="#pgr3" aria-expanded="true"><i class="fa fa-code" title="" data-toggle="tooltip" data-original-title="Get Code"></i></a></h4>
+               
+                <div class="progress m-t-30 active">
+                    <div class="progress-bar bg-primary progress-bar-striped active" 
+                    style="height:8px;" 
+                    [style.width]="obtenerValor1"
+                    role="progressbar"> 
+                </div>
+                 <!--[style.width]="obtenerAncho"-->
+
+    
+          
+                <!-- [style.width]="obtenerAncho"-->
+            </div>
+
+            <div class="card-body">
+             
+                <div class="progress m-t-30 active">
+                    <div class="progress-bar bg-primary progress-bar-striped active" 
+                    style="height:8px;" 
+                    [style.width]="obtenerValor2"
+                    role="progressbar"> 
+                </div>
+                 <!--[style.width]="obtenerAncho"-->
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                
+                <!---incrementador---->
+                <app-incrementador 
+                (valorSalida)="funcionValor( $event )"
+                [progreso]="progreso1"
+                [colorBoton]="color1"
+                ></app-incrementador>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-incrementador 
+                (valorSalida)="funcionValor2( $event )" 
+                [progreso]="progreso2"
+                [colorBoton]="color2">
+                </app-incrementador>
+ 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

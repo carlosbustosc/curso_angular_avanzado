@@ -1,0 +1,15 @@
+
+
+<div class="input-group">
+    <span class="input-group-btn">
+        <button [ngClass]="colorBoton" type="button" (click)="restarValor(-5)"> <i class="fa fa-minus"></i></button>
+    </span>
+    
+    <input type="text" class="form-control" placeholder="Product name" 
+    [(ngModel)]="progreso"
+    (ngModelChange)="EnviarNumero($event)">
+
+    <span class="input-group-btn">
+        <button [ngClass]="colorBoton" type="button" (click)="sumarValor(+5)"><i class="fa fa-plus"></i></button>
+    </span>
+</div>
