@@ -19,10 +19,6 @@ import { AppRoutingModule } from '../app-routing.module';
 
 import { FormsModule } from '@angular/forms';
 
-// Importa Ng2ChartsModule
-import { ChartsModule } from 'ng2-charts';
-
-
 @NgModule({
   declarations: [
     DashboradComponent,
@@ -35,8 +31,7 @@ import { ChartsModule } from 'ng2-charts';
     SharedModule,
     AppRoutingModule,
     FormsModule,
-    ProgresoModule,
-    
+    ProgresoModule
   ],
 
   exports:[
