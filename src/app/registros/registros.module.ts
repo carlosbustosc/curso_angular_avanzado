@@ -6,6 +6,12 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 
+//--para rutas--//
+import { RouterModule } from '@angular/router';
+
+//--para formularios--/
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -14,6 +20,8 @@ import { RegistroComponent } from './registro/registro.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
+    FormsModule
   ],
   exports:[
     LoginComponent,

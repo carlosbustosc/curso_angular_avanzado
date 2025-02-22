@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 
 //---importar charts----//
 import { BaseChartDirective } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -30,7 +31,8 @@ import { BaseChartDirective } from 'ng2-charts';
     DashboradComponent,
     Grafica1Component,
     ProgressComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { BaseChartDirective } from 'ng2-charts';
     DashboradComponent,
     Grafica1Component,
     ProgressComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ]
 })
 export class PagesModule { }
